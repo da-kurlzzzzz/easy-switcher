@@ -1,0 +1,11 @@
+Architecture: amd64
+Depends: libc6, libevdev2
+Description: Keyboard layout switcher for Linux
+ Easy Switcher is a keyboard layout switcher and input corrector for Linux.
+Maintainer: freemind <easy-switcher@mail.ru>
+Package: easy-switcher
+Priority: optional
+Section: utils
+Version: 0.5
+Installed-Size: 526
+
