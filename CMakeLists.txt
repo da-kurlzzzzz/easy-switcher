@@ -21,12 +21,10 @@ add_executable(easy-switcher
 target_link_libraries(${PROJECT_NAME} ${LIBEVDEV_LIBRARIES})
 
 install(TARGETS easy-switcher RUNTIME DESTINATION bin)
-install(FILES resources/easy-switcher.service DESTINATION lib/systemd/system)
 install(FILES resources/easy-switcher.1 DESTINATION share/man/man1)
 
 add_custom_target(uninstall
     COMMAND ${CMAKE_COMMAND} -E remove /usr/bin/easy-switcher
     COMMAND ${CMAKE_COMMAND} -E remove_directory /etc/easy-switcher
-    COMMAND ${CMAKE_COMMAND} -E remove /usr/lib/systemd/system/easy-switcher.service
     COMMAND ${CMAKE_COMMAND} -E remove /usr/share/man/man1/easy-switcher.1
 )

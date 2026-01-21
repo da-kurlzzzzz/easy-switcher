@@ -1,8 +1,6 @@
-# resources/postrm
 #!/bin/sh
 set -e
+#DEBHELPER#
 if [ "$1" = "purge" ]; then
     rm -rf /etc/easy-switcher
 fi
-exit 0
-
